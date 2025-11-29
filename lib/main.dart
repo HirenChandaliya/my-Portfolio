@@ -353,7 +353,7 @@ class _MouseHomePageState extends State<MouseHomePage> {
                                     children: [
                                       const Divider(color: Colors.white24),
                                       const SizedBox(height: 50),
-                                      Text("SELECTED WORK", style: TextStyle(fontSize: isMobile ? 12 : 14, letterSpacing: 2, color: Colors.white)),
+                                      Text("RECENT WORK", style: TextStyle(fontSize: isMobile ? 12 : 14, letterSpacing: 2, color: Colors.white)),
                                       const SizedBox(height: 50),
                                     ],
                                   ),
@@ -458,8 +458,6 @@ class _MouseHomePageState extends State<MouseHomePage> {
     );
   }
 
-  // --- Widgets ---
-
   Widget _buildCircularSocialIcon(IconData icon, String url) {
     return InkWell(
       onTap: () => openLink(url),
@@ -551,7 +549,6 @@ class _MouseHomePageState extends State<MouseHomePage> {
   }
 }
 
-// --- SERVICE CARD ---
 class ServiceCard extends StatefulWidget {
   final String title;
   final String desc;
